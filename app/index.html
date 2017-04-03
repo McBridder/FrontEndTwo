@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <title>Walkease - Walk finder</title>
+
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+      
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+      
+  </head>
+  <body>
+      <nav class="navbar-inverse">
+        <div class="container-fixed">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo-sm.png" alt="Walkease" title="Walkease"/></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home detailIcon" aria-hidden="true"></span>HOME </a></li>
+                    <li><a href="pages/checklist.html"><span class="glyphicon glyphicon-check detailIcon" aria-hidden="true"></span>CHECKLIST</a></li>  
+                </ul>
+            </div>
+        </div>
+      </nav>
+      
+<div class="col-xs-12 col-sm-12 hero">
+    <div class="container">
+        
+        <img class="title-logo"src="images/logo-lg.png"/>
+
+
+        <form  method="link" action="search_results.html "class="form-horizontal">
+        <fieldset>
+            
+        <!-- Text input-->
+        <div class="form-group searchBox">
+          <label class="col-md-4 control-label instruction" for="location">Search via Location</label>  
+          <div class="col-md-4">
+          <input id="location" name="location" type="text" placeholder="I.e. London, Manchester, Bradford..." class="form-control input-md">
+          </div>
+        </div>
+        </form> 
+    </div>
+</div>
+<div class="col-xs-12 col-sm-12">
+        <ul class="output_results"></ul>
+</div>
+            
+      
+     <!-- FOOTER SECTION -->    
+    
+          <footer class="span12 footer">
+              <p>
+              Walkease 2017
+              </p>
+          
+          </footer>
+   
+    
+<!-- END FOOTER SECTION -->
+      
+            
+    <!--build:js js/main.min.js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- endbuild --> 
+
+    <script src="js/bundle.js"></script>
+
+      
+  </body>
+</html>

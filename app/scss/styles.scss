@@ -1,0 +1,196 @@
+@import "variables";
+@import "colours";
+
+$break-small: 640px;
+
+/* END OF VARIABLES LIST */
+.hero {
+    background-image: $hero-lg;
+    
+@media screen and (max-width: $break-small) {
+    background-image: $hero-sm;
+  }
+}
+
+body { padding-bottom: 70px;}
+
+
+.logo{
+    max-width: 40%;
+}
+
+.title-logo {
+    margin: 25px auto;
+    width: 100%;
+}
+
+.instruction {
+    width: 100%;
+    margin: 10px auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.searchBox{
+    margin-bottom: 35px;
+}
+
+.rounded-btn{
+ @include border-radius($double);
+ @include padding($standard);
+ @include margin($standard);
+ border: 0;
+ text-align: center;
+}
+
+.main{
+    background-color: $main-color;
+    color: $accent-color;
+}
+
+.remove {
+    width: 100%;
+    background-color: #b02b2b;
+    color: #fff;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 0px 0px 3px 3px;
+    margin-bottom: 10px;
+}
+
+.add{
+    background-color: $green;
+    color: $accent-color;
+}
+
+.prevBtn {
+    border: solid 1px #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    margin: 8px 15px;
+    padding: 6px 10px;
+}
+
+.full-btn{
+ @include border-radius(double);
+ background-color: $main-color;
+ width: $full;
+}
+
+.footer{
+    background-color: $main-color;
+    width: $full;
+    @include padding (1em);
+    p{
+        text-align: center;
+        color: $accent-color;
+        margin: 0px;
+    }
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.result{
+    background: $accent-color;
+    border: 1px solid $grey;
+    @include border-radius($standard);
+    @include padding($double);
+    @include margin($standard);
+    
+    
+}
+
+.alert{
+    text-align: center;
+    color: $green;
+    background-color: $success;
+    font-weight: bolder;
+    @include margin($standard);
+
+}
+
+.error{
+    text-align: center;
+    color: $red;
+    background-color: $error;
+    font-weight: bolder;
+        @include margin($standard);
+
+}
+
+.detail {
+    text-align: center;
+    color: $main-color;
+    font-weight: bolder;
+    background-color: $accent-color;
+    border: 1% solid $main-color;
+    @include padding(10px 0px 10px 0px);
+    @include margin(0px);
+    width: 48%;
+    display: inline-block;
+}
+
+a {
+    color: $accent-color;
+    text-decoration: none;
+}
+
+a:hover{
+    color: $accent-color;
+    text-decoration: none;
+}
+
+.result-line {
+    text-align: center;
+    color: #000;
+    border: solid 1px #AAA;
+    border-radius: 3px 3px 0px 0px;
+    list-style: none;
+    padding: 7px 11px !important;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.result-line h3{
+    font-size: 0.95em;
+    margin: 10px;
+}
+
+.detailIcon{
+    margin-right: 5px;
+}
+
+.rating{
+    margin: 10px 0px;
+}
+
+.features{
+    padding: 0px;
+}
+
+.feature_list {
+    width: 50%;
+    text-align: center;
+    padding: 12px 0px;
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #ebebeb;
+}
+.output_results, .checkResult{
+    padding: 0px;
+    margin: 20px auto;
+}
+
+#map{
+    height: 250px;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 8px 9px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+}

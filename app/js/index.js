@@ -140,6 +140,7 @@ $(document).ready(function(){
 	          center: user_location
 	        });
 	  
+  
 	     	directionsDisplay.setMap(map);
 		    var request = {
 		       origin:user_location, 
