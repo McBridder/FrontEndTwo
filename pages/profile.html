@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
       
     <title>Walkease - Walk finder</title>
-
+      
     <!--build:css ../css/styles.min.css-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <!--endbuild-->
 
-    <link rel="stylesheet" href="../css/styles.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
       
   </head>
   <body>
     
-      
       <!-- NAVIGATION -->
       
 <nav class="navbar-inverse">
@@ -28,8 +27,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <button class="prevBtn">&laquo; prev</button>
-
+      <button class="prevBtn">&laquo; prev</button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -40,43 +38,77 @@
   </div>
 </nav>
       
-      <!-- END OF NAVIGATION -->
+      <!-- END OF NAVIGATION --
       
       <!-- PROFILE CONTENT -->
-      
+            
       <div class="container">
-           <div class="checkResult">
-               
+          
+          <div class="row">
+          
+          <div class="col-md-12 text-center"><h3 class ="park-name"> </h3></div>
+          <div class="col-md-12">
+              <div id="map" allowfullscreen></div>
+              </div>
+          <div class="col-md-12">
+          <div class="detail rating"><span class="glyphicon glyphicon-star detailIcon
+" aria-hidden="true"></span></div>
+          <div class="detail length"><span class="glyphicon glyphicon-road detailIcon
+" aria-hidden="true"></span></div>
+                  </div>
           </div>
           
+            
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <ul class="features"></ul>
+          </div>
+      </div>    
           
+      
+        <div class="row">  
+          
+      <!-- ADD BUTTON -->
+           
+            <div class="col-md-12"><p class="rounded-btn add checklist"></p></div>
+          
+          
+           <!-- ADD BUTTON -->
+                  
+<!-- RETURN BUTTON -->
+           
+            <div class="col-md-12">
+                <p class="rounded-btn main"><a href="../index.html" role="button">Back to Search</a></p>
+            </div>
+          
+    </div>
+<!-- RETURN BUTTON -->
+      
       </div>
+    
+  </div>
+</div>
               
+          </div>
+      
+      
+          
+         
+      
+      
       <!-- END OF PROFILE CONTENT -->
       
-
-      <!-- FOOTER SECTION -->    
-    
-          <div class="span12 footer">
-              <p>
-              Walkease 2016
-              </p>
-          
-          </div>
+      
    
     
 <!-- END FOOTER SECTION -->
-      
-            
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGKpspcuc9MUQAgpou-KWFrGrwvlshyNw&callback=initMap"></script>
+
     <!--build:js ../js/main.min.js -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <!-- endbuild --> 
-          
-    <script src="../js/bundle.js"></script>
-
-    
-
       
+    <script src="../js/bundle.js"></script>
   </body>
 </html>
