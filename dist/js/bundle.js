@@ -75,7 +75,7 @@
 
 
 	getallLocations = function(){
-		$.getJSON("../json/locations.json", function(loc){
+		$.getJSON("../dist/json/locations.json", function(loc){
             storeLocations = loc;
 	    });
 	}
